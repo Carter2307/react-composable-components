@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+@utility shadow-input-focused {
+  box-shadow: 0 0 0 3px theme("colors.gray.300");
+}
+
+@utility shadow-input-invalid {
+  box-shadow: 0 0 0 3px theme("colors.red.500");
+}
+
+@utility transparent-overlay {
+  background-color: rgba(68, 68, 68, 0.3);
+}
